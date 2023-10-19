@@ -28,7 +28,7 @@ Prerequisite:
 Process:
 1. sign request body with your private key
 2. encode signature in base64
-3. put result of step 2 into request header with key: ***<font color="yellow">[Depends on which party you are]</font>-sig***
+3. put result of step 2 into request header with key: ***<font color="yellow">mrbo-sig</font>***
 4. send request
 
 ### **Validation of signature:**
@@ -37,7 +37,7 @@ Prerequisite: receive and save MR public key
 
 Process:
 1. receive request
-2. get value from request header with key:  ***<font color="yellow">[Depends on which party you are]</font>-sig***
+2. get value from request header with key:  ***<font color="yellow">mrbo-sig</font>***
 3. decode it from base64
 4. check that result of step 3 is valid for combination of this request body and MR public key
 
